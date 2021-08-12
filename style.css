@@ -1,76 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
 body {
-    font-family: Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: black;
-    color: white;
+    background: linear-gradient(45deg,#5E64B5, #5863fc);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header h1 {
-    margin-top: 100px;
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
+main {
+    background-color: white;
+    max-width: 500px;
+    min-height: 70vh;
+    padding: 1.6rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
-#caixa-principal {
-    min-width: 250px;
-    max-width: 300px;
+main h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-#caixa-principal h2 {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-
-input,select {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    display: block;
+    height: 4px;
+    width: 6rem;
+    bottom: 3px;
+    left: 0;
     border-radius: 8px;
-    border: none;
-    outline: none;
-    padding: 0px 10px 0px 10px;
+    background: linear-gradient(45deg,#5E64B5, #5863fc);
 }
 
-#caixa-principal input[type=number] {
-    padding: 0px 13px 0px 13px;
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    border-radius: 8px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
     width: 100%;
-    height: 26px;
-}
-
-label {
-    font-size: 14px;
-    font-weight: 200;
     display: block;
+    margin: 0px auto 2rem auto;
+    height: 1.6rem;
+    padding-left: .7rem;
+    background: transparent;
 }
 
-#inserir {
-    margin: 9px auto 9px auto;
-    width: 40%;
-    height: 26px;
+.input-field input::placeholder {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.8);
 }
 
-select {
-    margin: 0px auto 9px auto;
-    width: 70%;
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-#finalizar {
-    margin: 0px auto 9px auto;
-    width: 40%;
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    background: linear-gradient(to left, #5E64B5, #5863fc);
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.interactive-field input[type=button]{
+    display: block;
+    margin: 0px auto 15px auto;
+    height: 1.6rem;
+    width: 30%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.interactive-field input#inserir {
+    background: linear-gradient(to left, #5E64B5, #5863fc);
+}
+.interactive-field input#inserir:hover {
+    background: linear-gradient(to left, #5863fc, #5E64B5);
+    letter-spacing: 0.4px;
+}
+
+.interactive-field input#finalizar {
+    background: linear-gradient(to left, #5863fc, #5E64B5);
+    margin-top: 15px;
+}
+.interactive-field input#finalizar:hover {
+    background: linear-gradient(to left, #5E64B5, #5863fc);
+    letter-spacing: 0.4px;
+}
+
+#select {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#select option {
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
