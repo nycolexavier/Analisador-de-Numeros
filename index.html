@@ -9,30 +9,18 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            ANALISADOR DE NÚMEROS
-        </h1>
-    </header>
-
-    <section>
-        <div id="d1">
-            <h3 id="h3" style="margin: 0px; margin-top: 100px; padding: 0px 0px 24px;">Digite um número:</h3>
-            <input type="number" name="num" id="num" onblur="desfoco()" class="invisible">
-            <input type="button" id="insert" value="Inserir" onclick="inserir()"> </br>
-            <label for="num"></label>
+    <main>
+        <div class="first-container">
+            <input type="number" name="number-input" id="number-input" placeholder="Digite um Número">
+            <input type="button" id="insert-input" value="Inserir"> </br>
+            <div class="error-field"></div>
         </div>
-        <div id="d2">
-        </div>
-        <div id="d3">
+        <div class="result-container">
+            <div id="select-field"></div>
             <input type="button" id="finalizar" value="Finalizar" onclick="finalizar()">
             <p id="res"></p>
         </div>
-    </section>
-    
-    <footer>
-        <p>&copy; st1np</p>
-    </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
