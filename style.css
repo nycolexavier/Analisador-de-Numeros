@@ -30,7 +30,8 @@ main {
 }
 
 .title-container {
-    position: absolute;
+    display: block;
+    position: relative;
     width: 100%;
 }
 
@@ -41,39 +42,35 @@ h1 {
     font-weight: 700;
 }
 
-.container-size {
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
+.father-container {
+    position: absolute;
+    top: calc(50% + 1rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.program-container {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.result-container {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#number-input {
+.inputs {
     display: block;
     position: relative;
-    height: 40px;
-    margin: 0 auto;
+    height: 35px;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
 }
 
-#insert-input {
-    display: block;
-    position: relative;
-    height: 40px;
-    margin: 0 auto;
+.number-input {
+
 }
 
-#finish-input {
+.insert.input {
+
+}
+
+.finish-input {
+    margin: 0;
+}
+
+.select-style {
     display: block;
-    position: relative;
-    height: 40px;
-    margin: 0 auto; 
+    margin: 0 auto 10px auto;
+    background-color:;
 }
