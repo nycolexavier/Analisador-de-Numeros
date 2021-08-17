@@ -10,16 +10,19 @@
 
 <body>
     <main>
-        <div class="first-container">
-            <input type="number" name="number-input" id="number-input" placeholder="Digite um Número">
-            <input type="button" id="insert-input" value="Inserir"> </br>
-            <div class="error-field"></div>
-        </div>
-        <div class="result-container">
-            <div id="select-field"></div>
-            <input type="button" id="finalizar" value="Finalizar" onclick="finalizar()">
-            <p id="res"></p>
-        </div>
+    <div class="title-container">
+            <h1>ANALISADOR DE NÚMEROS</h1>
+    </div>
+    <div class="program-container container-size">
+        <input type="number" name="number-input" id="number-input" placeholder="Digite um Número" onblur="desfoco()">
+        <input type="button" id="insert-input" value="Inserir" onclick="inserir()">
+        <div class="error-field"></div>
+    </div>
+    <div class="result-container">
+        <div id="select-field"></div>
+        <input type="button" id="finish-input" value="Finalizar" onclick="finalizar()">
+        <p id="result-field"></p>
+    </div>
     </main>
 
     <script src="script.js"></script>

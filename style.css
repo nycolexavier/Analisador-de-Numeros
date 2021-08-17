@@ -14,22 +14,66 @@
 }
 
 body {
-    background-color: #101e35;
+    background-color: #283240;
     color: white;
     font-family: Poppins, sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
-    width: 40vw;
-    height: 80vh;
+    width: 60%;
+    overflow: auto;
+    height: 100%;
     position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
+    margin: 0 auto;
+}
+
+.title-container {
+    position: absolute;
+    width: 100%;
 }
 
 h1 {
-    font-size: 2rem;
+    letter-spacing: 2.2px;
+    text-align: center;
+    font-size: 2.5rem;
     font-weight: 700;
+}
+
+.container-size {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.program-container {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.result-container {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#number-input {
+    display: block;
+    position: relative;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#insert-input {
+    display: block;
+    position: relative;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#finish-input {
+    display: block;
+    position: relative;
+    height: 40px;
+    margin: 0 auto; 
 }
