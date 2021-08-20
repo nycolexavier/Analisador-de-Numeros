@@ -12,7 +12,7 @@ body {  /*CORPO*/
     box-sizing: border-box;
 }
 
-h3 {      /*SUBTITULO*/
+h2 {      /*SUBTITULO*/
     font-family: Avenir-Heavy, sans-serif;
     font-size: 24px;
     font-stretch: normal;
