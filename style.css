@@ -21,6 +21,15 @@ h1 {      /*TITULO*/
     letter-spacing: 5px;
 }
 
+section {       /*CONTAINER*/
+    max-width: 374px;   
+    margin: 32px auto;
+    overflow: visible;
+    width: 100%;
+    z-index: 1;
+    display: block;
+}
+
 h2 {      /*SUBTITULO*/
     font-family: Avenir-Heavy, sans-serif;
     font-size: 24px;
@@ -37,14 +46,7 @@ h2 {      /*SUBTITULO*/
 }
 
 
-section {       /*CONTAINER*/
-    max-width: 374px;   
-    margin: 32px auto;
-    overflow: visible;
-    width: 100%;
-    z-index: 1;
-    display: block;
-}
+
 
 input {       /*ESTILIZACAO TODOS INPUT*/
     font-family: Avenir-Light, sans-serif;
