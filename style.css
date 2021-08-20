@@ -1,3 +1,8 @@
+/*TUDO*/
+* { 
+    box-sizing: border-box;
+}
+
 body {  /*CORPO*/
     background-color: #0c1727e1; /*#98ceff*/ /*5e7e9b*/ /*486179*/ /*#384b5e*/ /*#0c1727e1*/
     -webkit-font-smoothing: antialiased;
@@ -8,9 +13,7 @@ body {  /*CORPO*/
     color: rgb(255, 255, 255);
 }
 
-* { /*TUDO*/
-    box-sizing: border-box;
-}
+
 
 h2 {      /*SUBTITULO*/
     font-family: Avenir-Heavy, sans-serif;
