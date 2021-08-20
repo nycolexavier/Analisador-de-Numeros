@@ -13,7 +13,13 @@ body {  /*CORPO*/
     color: rgb(255, 255, 255);
 }
 
-
+h1 {      /*TITULO*/
+    font-size: 40px;
+    text-align: center;
+    font-family: Avenir-Black,sans-serif;
+    margin-top: 2.5em;
+    letter-spacing: 5px;
+}
 
 h2 {      /*SUBTITULO*/
     font-family: Avenir-Heavy, sans-serif;
@@ -29,13 +35,7 @@ h2 {      /*SUBTITULO*/
     margin-top: 100px; 
     padding: 0px 0px 24px;
 }
-h1 {      /*TITULO*/
-    font-size: 40px;
-    text-align: center;
-    font-family: Avenir-Black,sans-serif;
-    margin-top: 2.5em;
-    letter-spacing: 5px;
-}
+
 
 section {       /*CONTAINER*/
     max-width: 374px;   
