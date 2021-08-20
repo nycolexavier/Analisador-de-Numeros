@@ -1,3 +1,34 @@
+@font-face {
+    font-family:Avenir-Heavy;
+    src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Heavy-05.woff) 
+    format("woff"),
+    url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Heavy-05.ttf) 
+    format("truetype");font-weight:800
+}
+ 
+@font-face {
+    font-family:Avenir-Black;
+    src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Black-03.woff) 
+    format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Black-03.ttf) 
+    format("truetype");font-weight:400
+}
+
+@font-face {
+    font-family:Avenir-Book;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Book-01.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Book-01.ttf) format("truetype");font-weight:400
+}
+
+@font-face {
+    font-family:Avenir-Light;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Light-07.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Light-07.ttf) format("truetype");font-weight:300
+}
+
+@font-face {
+    font-family:Avenir-Medium;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Medium-09.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Medium-09.ttf) format("truetype");font-weight:400
+}
+
+@font-face {
+    font-family:Avenir-Roman;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Roman-12.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Roman-12.ttf) format("truetype");font-weight:400
+}
+
 /*TUDO*/
 * { 
     box-sizing: border-box;
@@ -46,8 +77,6 @@ h2 {      /*SUBTITULO*/
 }
 
 
-
-
 input {       /*ESTILIZACAO TODOS INPUT*/
     font-family: Avenir-Light, sans-serif;
     font-size: 18px;
@@ -90,6 +119,7 @@ select {  /*ESTILIZACAO SELECT*/
     margin-bottom: 18px;
     
 }
+
 ::-webkit-scrollbar-track { /*ESTILIZACAO SCROLLBAR */
     background-color: #99ceff23;
 }
@@ -143,29 +173,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         margin: 0;
     }
 
-@font-face {
-    font-family:Avenir-Heavy;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Heavy-05.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Heavy-05.ttf) format("truetype");font-weight:800
-}
- 
-@font-face {
-    font-family:Avenir-Black;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Black-03.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Black-03.ttf) format("truetype");font-weight:400
-}
 
-@font-face {
-    font-family:Avenir-Book;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Book-01.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Book-01.ttf) format("truetype");font-weight:400
-}
-
-@font-face {
-    font-family:Avenir-Light;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Light-07.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Light-07.ttf) format("truetype");font-weight:300
-}
-
-@font-face {
-    font-family:Avenir-Medium;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Medium-09.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Medium-09.ttf) format("truetype");font-weight:400
-}
-
-@font-face {
-    font-family:Avenir-Roman;src:url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Roman-12.woff) format("woff"),url(https://prod-static.disney-plus.net/eu-west-1/builds/0dbbdb5797cc274df6952863958f9afdbaa6cf27/src/common/assets/fonts/Avenir-Roman-12.ttf) format("truetype");font-weight:400
-}
 
 .green {
     transition: border 0.1s;    /*BORDA VERDE*/
